@@ -1,0 +1,13 @@
+<launch>
+    <!-- 将 Urdf 文件的内容加载到参数服务器 -->
+    <param name="robot_description" command ="$(find xacro)/xacro $(find box_gazebo)/urdf/zuhe.urdf.xacro" />
+    
+    <node pkg = "rviz" type = "rviz" name = "rviz" args = "-d $(find box_gazebo)/config/mycar.rviz" />
+    <!--启动 机器人状态 和 关节状态 发布节点-->
+    <node pkg = "robot_state_publisher" type = "robot_state_publisher" name = "robot_state_publisher"/>
+    <node pkg = "joint_state_publisher" type = "joint_state_publisher" name = "joint_state_publisher"/>
+
+    <!--启动 图形化控制关节运动 节点-->
+    <node pkg = "joint_state_publisher_gui" type = "joint_state_publisher_gui" name = "joint_state_publisher_gui"/>
+
+</launch>
