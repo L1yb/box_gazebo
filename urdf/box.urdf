@@ -1,5 +1,3 @@
-
-
 <robot name="box">
     <link name="base_link">
         <visual>

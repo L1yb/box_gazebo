@@ -1,6 +1,4 @@
-<!-- 摄像头相关的 xacro 文件 -->
 <robot name="my_camera" xmlns:xacro="http://wiki.ros.org/xacro">
-    <!-- 摄像头属性 -->
     <xacro:property name="camera_length" value="0.01" />
     <xacro:property name="camera_width" value="0.025" />
     <xacro:property name="camera_height" value="0.025" />
