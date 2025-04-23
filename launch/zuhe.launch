@@ -1,7 +1,7 @@
 <launch>
     <param name = "robot_description" command = "$(find xacro)/xacro $(find box_gazebo)/urdf/zuhe.urdf.xacro" />
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
-        <arg name="world_name" value="$(find box_gazebo)/worlds/square_hall.world" />
+        <arg name="world_name" value="$(find box_gazebo)/worlds/small_warehouse.world" />
     </include>
     <node pkg = "gazebo_ros" type = "spawn_model" name = "model" args = "-urdf -model mycar -param robot_description -x 0.0 -y 0.0 -z 0.0 -Y 0.0" />
 

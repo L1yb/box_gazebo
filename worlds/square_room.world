@@ -82,13 +82,13 @@
       <elevation>0</elevation>
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
-    <model name='Corridor'>
-      <pose frame=''>-0.575756 -1.33887 0 0 -0 0</pose>
-      <link name='Wall_5'>
-        <collision name='Wall_5_Collision'>
+    <model name='Square_Room'>
+      <pose frame=''>2.26271 -1.81812 0 0 -0 0</pose>
+      <link name='Wall_13'>
+        <collision name='Wall_13_Collision'>
           <geometry>
             <box>
-              <size>50 0.15 2.5</size>
+              <size>10 0.15 2.5</size>
             </box>
           </geometry>
           <pose frame=''>0 0 1.25 0 -0 0</pose>
@@ -106,34 +106,34 @@
             </friction>
           </surface>
         </collision>
-        <visual name='Wall_5_Visual'>
+        <visual name='Wall_13_Visual'>
           <pose frame=''>0 0 1.25 0 -0 0</pose>
           <geometry>
             <box>
-              <size>50 0.15 2.5</size>
+              <size>10 0.15 2.5</size>
             </box>
           </geometry>
           <material>
             <script>
               <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Wood</name>
+              <name>Gazebo/Bricks</name>
             </script>
-            <ambient>1 1 1 1</ambient>
+            <ambient>0.435294 0.796078 0.67451 1</ambient>
           </material>
           <meta>
             <layer>0</layer>
           </meta>
         </visual>
-        <pose frame=''>-1e-06 2.425 0 0 -0 3.14159</pose>
+        <pose frame=''>-4.92478 -0.013311 0 0 -0 -1.5708</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
-      <link name='Wall_9'>
-        <collision name='Wall_9_Collision'>
+      <link name='Wall_14'>
+        <collision name='Wall_14_Collision'>
           <geometry>
             <box>
-              <size>50 0.15 2.5</size>
+              <size>10.0001 0.15 2.5</size>
             </box>
           </geometry>
           <pose frame=''>0 0 1.25 0 -0 0</pose>
@@ -151,17 +151,17 @@
             </friction>
           </surface>
         </collision>
-        <visual name='Wall_9_Visual'>
+        <visual name='Wall_14_Visual'>
           <pose frame=''>0 0 1.25 0 -0 0</pose>
           <geometry>
             <box>
-              <size>50 0.15 2.5</size>
+              <size>10.0001 0.15 2.5</size>
             </box>
           </geometry>
           <material>
             <script>
               <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Wood</name>
+              <name>Gazebo/Bricks</name>
             </script>
             <ambient>1 1 1 1</ambient>
           </material>
@@ -169,7 +169,97 @@
             <layer>0</layer>
           </meta>
         </visual>
-        <pose frame=''>-1e-06 -2.425 0 0 -0 3.14159</pose>
+        <pose frame=''>0 -4.9249 0 0 -0 0.002724</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='Wall_15'>
+        <collision name='Wall_15_Collision'>
+          <geometry>
+            <box>
+              <size>10 0.15 2.5</size>
+            </box>
+          </geometry>
+          <pose frame=''>0 0 1.25 0 -0 0</pose>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Wall_15_Visual'>
+          <pose frame=''>0 0 1.25 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>10 0.15 2.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Bricks</name>
+            </script>
+            <ambient>1 1 1 1</ambient>
+          </material>
+          <meta>
+            <layer>0</layer>
+          </meta>
+        </visual>
+        <pose frame=''>4.92478 0.013516 0 0 -0 1.5708</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <link name='Wall_16'>
+        <collision name='Wall_16_Collision'>
+          <geometry>
+            <box>
+              <size>10 0.15 2.5</size>
+            </box>
+          </geometry>
+          <pose frame=''>0 0 1.25 0 -0 0</pose>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='Wall_16_Visual'>
+          <pose frame=''>0 0 1.25 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>10 0.15 2.5</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Bricks</name>
+            </script>
+            <ambient>1 1 1 1</ambient>
+          </material>
+          <meta>
+            <layer>0</layer>
+          </meta>
+        </visual>
+        <pose frame=''>-0.000218 4.93852 0 0 -0 3.14159</pose>
         <self_collide>0</self_collide>
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
@@ -177,21 +267,33 @@
       <static>1</static>
     </model>
     <state world_name='default'>
-      <sim_time>162 221000000</sim_time>
-      <real_time>162 650658473</real_time>
-      <wall_time>1604859492 995618749</wall_time>
-      <iterations>162221</iterations>
-      <model name='Corridor'>
-        <pose frame=''>10 0 0 0 -0 0</pose>
+      <sim_time>518 122000000</sim_time>
+      <real_time>841 295097938</real_time>
+      <wall_time>1604604093 471445071</wall_time>
+      <iterations>518122</iterations>
+      <model name='Square_Room'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
-        <link name='Wall_5'>
-          <pose frame=''>10 2.425 0 0 -0 3.14159</pose>
+        <link name='Wall_13'>
+          <pose frame=''>-4.92478 -0.013311 0 0 0 -1.5708</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
-        <link name='Wall_9'>
-          <pose frame=''>10 -2.425 0 0 -0 3.14159</pose>
+        <link name='Wall_14'>
+          <pose frame=''>0 -4.9249 0 0 -0 0.002724</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_15'>
+          <pose frame=''>4.92478 0.013516 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_16'>
+          <pose frame=''>-0.000218 4.93852 0 0 -0 3.14159</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -213,7 +315,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>8.54008 -3.26426 52.7572 -3.9e-05 1.5698 1.57197</pose>
+        <pose frame=''>0 0 35.5051 3.14159 1.57079 3.14159</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
